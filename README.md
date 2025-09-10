@@ -8,13 +8,13 @@ Chinese Notice: 如果无法查看此文档中的图片,请下载次项目后在
 
 1、Fork this repository
 
-2、Please rewrite the target host name in api/proxy.js to "google.com" by default.
+2、Please rewrite the target host name in api/proxy.js to "firefox.com" by default.
 
 ```js
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 module.exports = (req, res) => {
-  let target = "https://www.google.com/"; //your website url
+  let target = "https://www.firefox.com/"; //your website url
   //   if (
   //     req.url.startsWith("/api") ||
   //     req.url.startsWith("/auth") ||
